@@ -1,65 +1,68 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>Hotel Reveiwer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Reviewer</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" href="./images/hotel.avif" type="image/x-icon">
-
   <script defer type="module" src="./index.js"></script>
-  
 </head>
 
 <body>
   <header>
-    <h3>Hotel Reveiwer</h3>
-
+    <h1>Hotel Reviewer</h1>
+    <p>Welcome! Share your ratings and reviews of various meals.</p>
   </header>
-  <p>Welcome to our site where you can freely post your ratings of various meals</p>
-    <p>feel free to submit your reviews down here:</p>
 
-  <form id="new-comments">
-    <h4>Add New Comments:</h4>
-    <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="new-restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
-    <label for="new-image">Image: </label>
-    <input type="text" name="image" id="new-image" />
-    <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
-    <input type="submit" id='submit-button' value="submit" />
-  </form>
+  <main>
+    <section class="review-form">
+      <h2>Add Your Review:</h2>
+      <form id="new-comments">
+        <div>
+          <label for="new-name">Name:</label>
+          <input type="text" name="name" id="new-name" required />
+        </div>
+        <div>
+          <label for="new-restaurant">Restaurant:</label>
+          <input type="text" name="restaurant" id="new-restaurant" required />
+        </div>
+        <div>
+          <label for="new-image">Image URL:</label>
+          <input type="text" name="image" id="new-image" required />
+        </div>
+        <div>
+          <label for="new-rating">Rating (1-10):</label>
+          <input type="number" name="rating" id="new-rating" min="1" max="10" required />
+        </div>
+        <div>
+          <label for="new-comment">Comment:</label>
+          <textarea name="new-comment" id="new-comment" required></textarea>
+        </div>
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </section>
 
-  
-  <div id="Food-menu">
-  
-  </div>
+    <section id="Food-menu">
+      <h2>Food Menu</h2>
+      <!-- Dynamic content for reviews will go here -->
+    </section>
 
+    <section id="Food-detail">
+      <img class="detail-image" src="./images/goes.jpg" alt="Food Image" />
+      <h2 class="name">Dish Name</h2>
+      <h3 class="restaurant">Restaurant Name</h3>
+      <h3>Rating:</h3>
+      <p><span id="rating-display">Insert rating here</span> / 10</p>
+      <h3>Comment:</h3>
+      <p id="comment-display">Insert comment here</p>
+    </section>
+  </main>
 
-  <div id="Food-detail">
-    <img class="detail-image" src="./images/goes.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
-    
-  </div>
-
-  <h3>Rating:</h3>
-  <p>
-    <span id='rating-display'>Insert rating here</span> / 10
-  </p>
-  <h3>Comment:</h3>
-  <p id='comment-display'>
-    Insert comment here
-  </p>
-
-
-
-
+  <footer>
+    <p>&copy; 2024 Hotel Reviewer. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
