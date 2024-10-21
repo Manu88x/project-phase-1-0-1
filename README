@@ -1,29 +1,49 @@
-HOTEL-REVEIWES:
-This is a web page that allows its users to comment on various meals in various hotels.
-
-![PHASE-PROJECT-101](./images/project.png)
-
-Users can::
-1.Post a comment
-2.post an image
-3.Post a rating
-4.Post the restaurant they are in.
-5.You can also edit or delete a comment.
 
 
-Technologies Used:
-HTML
-CSS
-JS
-db.json
+Hotel Reviews:
+
+Welcome to the Hotel Reviews project! This web application allows users to comment on and rate their dining experiences at various hotels.
+
+Table of Contents:
+
+Features
+Technologies Used
+Installation
+Usage
+Support and Contact
+License
 
 
-Support and Contact Details:
-Incase of any query, need for collaboration or issues with this code
-feel free to reach me at:Emmaneul.okoth@student.moringaschool.com
+Features
+Post a Comment: Share your thoughts on meals enjoyed at hotels.
+Upload an Image: Add photos of your dishes to enhance your reviews.
+Rate Your Experience: Provide a rating to help others gauge the quality.
+Specify the Restaurant: Clearly identify the restaurant where the meal was had.
+Edit/Delete Comments: Easily manage your feedback.
 
 
-LICENSE:
+Technologies Used
+HTML: For structure and content.
+CSS: For styling and layout.
+JavaScript: For interactivity and functionality.
+db.json: For data storage.
+
+Installation:
+Clone the resipitory on:
+https://github.com/Manu88x/project-phase-1-0-1
+
+acess this site on:
+https://manu88x.github.io/project-phase-1-0-1/
+
+Usage
+To post a review, fill in the required fields: comment, image, rating, and restaurant name.
+After submitting, your review will appear on the page.
+You can edit or delete your comments at any time.
+Support and Contact
+For any queries, collaboration opportunities, or issues with the code, feel free to reach out at:
+Email: Emmaneul.okoth@student.moringaschool.com
+
+
 Copyright <YEAR> <COPYRIGHT HOLDER>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
